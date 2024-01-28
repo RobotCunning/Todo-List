@@ -3,7 +3,7 @@
 
 const createPage = () => {
     const pageContent = document.getElementById('pageContent');
-
+    
     //var header = document.createElement('div');
     //header.id = 'header';
     //header.className = 'header';
@@ -27,6 +27,7 @@ const createPage = () => {
     footer.className = 'footer';
     footer.innerHTML = `Created by <a href="https://github.com/RobotCunning"> Charlie</a>.`;
     mainBody.appendChild(footer);
+
 }
 
 export default createPage;
