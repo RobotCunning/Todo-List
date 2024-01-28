@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+menu:not(article menu),
+ol:not(article ol),
+ul:not(article ul) {
+    list-style: none;
+}
+
+menu,
+ol,
+ul {
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+  
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}    
+
+
+#pageContent {
+    display: grid;
+    background-color: rgb(255, 253, 249);
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 5fr 1fr;
+    width: 100vw;
+    height: 100vh;
+}
+
+/*#header {
+    display: grid;
+    grid-area: 1/1/2/3;
+    background-color: rgb(88, 204, 131);
+
+}*/
+
+#sideBar {
+    display: grid;
+    grid-area: 1/1/4/2;
+    background-color: rgb(189, 213, 230);
+    box-shadow: inset -5px 0px 5px 0px rgb(255, 253, 249);
+}
+
+#mainBody {
+    display: grid;
+    grid-area: 1/2/4/3;
+    background-color: rgb(255, 253, 249);
+    grid-template-rows: 5fr 0.50fr;
+}
+
+#footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-row: 2/3;
+    background-color: rgb(255, 253, 249);
+}
+
